@@ -5,6 +5,17 @@ body {
     font-family: 'futura_ltbook', sans-serif;
     color: #484848;
 }
+
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-transform: uppercase;
@@ -179,10 +190,10 @@ nav.navbar.bootsnav ul.nav > li > a {
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus {
     color: #aaa;
 }
-.navbar-brand {
+/* .navbar-brand {
     height: auto;
     padding: 20px 15px;
-}
+} */
 #navbar-menu {
     margin: 6px 0;
 }
@@ -332,9 +343,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 }
 
 /* About */
-.about_content {
-    margin-right: 25px;
-}
+
 .about_content > h2 {
     font-size: 30px;
     /* margin: 90px 0 15px; */
@@ -934,6 +943,8 @@ img.img-responsive.img-rounded.img-thumbnail.same-size {
 }
 
 @media (max-width: 767px) {
+
+    
     h1 {
         font-size: 32px;
         line-height: 35px;
@@ -1003,9 +1014,21 @@ img.img-responsive.img-rounded.img-thumbnail.same-size {
 
 @media (max-width: 479px) {
 
+    .about_content > h2 {
+    font-size: 16px;
+    /* margin: 90px 0 15px; */
+    color:#ffcb0f;
+}
+.about_content > h3 {
+    font-size: 30px;
+    margin: 2px 0 30px;
+    text-transform: inherit;
+}
+
     img.logo {
         height: 4em;
         width: 9.5em;
+        text-align:center;
     }
 
     h1 {
