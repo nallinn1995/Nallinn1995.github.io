@@ -59,18 +59,18 @@ jQuery(document).ready(function ($) {
 
 
 
-        window.onscroll = function() {myFunction()};
+        // window.onscroll = function() {myFunction()};
         
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
         
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
+        // function myFunction() {
+        //   if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //   } else {
+        //     navbar.classList.remove("sticky");
+        //   }
+        // }
        
 
         // if ($(window).width() > 992) {
@@ -88,6 +88,14 @@ jQuery(document).ready(function ($) {
         //   } // end if
 
 
-       
+        $(window).bind('scroll', function() {
+            var navHeight = $( window ).height() - 55;
+                  if ($(window).scrollTop() > navHeight) {
+                      $('.navbar').addClass('fixed-top');
+                  }
+                  else {
+                      $('.navbar').removeClass('fixed-top');
+                  }
+             });
 
 });

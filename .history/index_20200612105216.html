@@ -12,12 +12,13 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="custom-font/fonts.css" />
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- Bootsnav -->
-    <!-- <link rel="stylesheet" href="css/bootsnav.css"> -->
+    <link rel="stylesheet" href="css/bootsnav.css">
     <!-- Fancybox -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
     <!-- Custom stylesheet -->
@@ -54,29 +55,47 @@
         <div class="top_nav">
             <div class="container">
                 <ul class="list-inline info">
-                    <li class="list-inline-item"><a href="#"><span class="fa fa-phone"></span> +91 8610328586</a></li>
-                    <li class="list-inline-item"><a href="#"><span class="fa fa-envelope"></span> jsengi2020@gmail.com</a></li>
+                    <li><a href="#"><span class="fa fa-phone"></span> +91 8610328586</a></li>
+                    <li><a href="#"><span class="fa fa-envelope"></span> jsengi2020@gmail.com</a></li>
                    <!--  <li><a href="#"><span class="fa fa-clock-o"></span> Mon - Sat 9:00 - 19:00</a></li> -->
                 </ul>
                 <ul class="list-inline social_icon">
-                    <li class="list-inline-item"><a href=""><span class="fa fa-facebook"></span></a></li>
-                    <li class="list-inline-item"><a href=""><span class="fa fa-twitter"></span></a></li>
-                    <li class="list-inline-item"><a href=""><span class="fa fa-linkedin"></span></a></li>
-                    <li class="list-inline-item"><a href=""><span class="fa fa-youtube"></span></a></li>
+                    <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                    <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                    <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+                    <li><a href=""><span class="fa fa-youtube"></span></a></li>
                 </ul>
             </div>
         </div>
-   
+        <!-- <nav id="navbar" class="navbar bootsnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href=""><img class="logo" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav menu">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="provider.html">Services</a></li>
+                        <li><a href="policy.html">Policy</a></li>
+                        <li><a href="procedure.html">Procedure</a></li>
+                        <li><a href="projects.html">Project</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
 
-        <nav id="navbar" class="navbar navbar-expand-lg bg-custom">
-
+        <nav id="navbar" class="navbar navbar-expand-lg bootsnav">
+                <div class="container">
+                <div class="navbar-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars" style="color:white"></i>
+                    <i class="fa fa-bars"></i>
                 </button>
-
                 <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a>
-
-              
+            </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -99,11 +118,11 @@
                     </li>
                   </ul>
                 </div>
+                </div>
               </nav>
     </header>
     <section id="home" class="home">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              
+        <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slider_img.jpg" class="d-block w-100" alt="Construction">
@@ -142,14 +161,14 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="fa fa-angle-left text-white" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="fa fa-angle-right text-white" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a> 
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
           </div>
     </section>
     <!-- About -->
@@ -187,7 +206,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="about_banner">
-                        <img  class="img-scale img-rounded img-responsive img-fluid" src="images/madi8.png" alt="" />
+                        <img  class="img-scale" src="images/madi8.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -197,14 +216,14 @@
     <section id="why_us"  data-aos="fade-up">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12 col-12">
-                    <div class="head_title text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="head_title">
                         <h2>Our Vision, Mission, And Objective</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-sm-6">
                     <div class="why_us_item">
                         <span class="fa fa-leaf"></span>
                         <h4>Our Vision</h4>
@@ -235,10 +254,10 @@
     <section data-aos="fade-down" id="why_us">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12 col-12">
-                    <div class="head_title text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="head_title">
                         <h2>ORGANIZATION CHART</h2>
-                        <img class="img-responsive img-fluid" style="border: inset; border-color: #731d27;width:500px" src="images/cut.png">
+                        <img style="border: inset; border-color: #731d27;" src="images/cut.png">
                     </div>
                 </div>
             </div>
@@ -254,11 +273,11 @@
                         <img class="logo" src="images/logo.png" alt="Construction" />
                         <p>We have well experienced in Cooling Tower Services work in Saudi Arabia in the name of MCC (Madi Contracting Est. ) more than 15 years. Now we established the J S ENGINEERING in Chennai.</p>
                         <ul class="list-inline footer_social_icon">
-                            <li class="list-inline-item"><a href=""><span class="fa fa-facebook"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-youtube"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-google-plus"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href=""><span class="fa fa-youtube"></span></a></li>
+                            <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href=""><span class="fa fa-linkedin"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -304,7 +323,9 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- Bootsnav js -->
+    <script src="js/bootsnav.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="js/isotope.js"></script>
     <script src="js/isotope-active.js"></script>

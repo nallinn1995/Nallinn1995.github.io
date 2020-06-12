@@ -17,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- Bootsnav -->
-    <!-- <link rel="stylesheet" href="css/bootsnav.css"> -->
+    <link rel="stylesheet" href="css/bootsnav.css">
     <!-- Fancybox -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
     <!-- Custom stylesheet -->
@@ -103,7 +103,11 @@
     </header>
     <section id="home" class="home">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              
+                <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slider_img.jpg" class="d-block w-100" alt="Construction">
@@ -143,11 +147,11 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="fa fa-angle-left text-white" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
                   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="fa fa-angle-right text-white" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a> 
           </div>
@@ -305,6 +309,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- Bootsnav js -->
+    <script src="js/bootsnav.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="js/isotope.js"></script>
     <script src="js/isotope-active.js"></script>

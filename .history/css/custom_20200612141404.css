@@ -323,11 +323,14 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 .carousel-control-next {
     right: -50px !important;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%) !important;
+    background-repeat: repeat-x !important;
 }
 
 .carousel-control-prev {
     left: -50px !important;
-    
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%) !important;
+    background-repeat: repeat-x !important;
 
 }
 

@@ -59,18 +59,18 @@ jQuery(document).ready(function ($) {
 
 
 
-        window.onscroll = function() {myFunction()};
+        // window.onscroll = function() {myFunction()};
         
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
         
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
+        // function myFunction() {
+        //   if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //   } else {
+        //     navbar.classList.remove("sticky");
+        //   }
+        // }
        
 
         // if ($(window).width() > 992) {
@@ -88,6 +88,18 @@ jQuery(document).ready(function ($) {
         //   } // end if
 
 
-       
+        var navbarOffest = $(".navbar").offset().top;
+
+        $(window).on("scroll", function() {
+          var navbarHeight = $(".navbar").outerHeight();
+      
+          if ($(window).scrollTop() >= navbarOffest) {
+            $(".navbar").addClass("navbar-fixed-top");
+            $("body").css("padding-top", navbarHeight + "px");
+          } else {
+            $(".navbar").removeClass("navbar-fixed-top");
+            $("body").css("padding-top", "0");
+          }
+        });
 
 });

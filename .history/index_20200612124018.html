@@ -17,7 +17,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- Bootsnav -->
-    <!-- <link rel="stylesheet" href="css/bootsnav.css"> -->
+    <link rel="stylesheet" href="css/bootsnav.css">
     <!-- Fancybox -->
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
     <!-- Custom stylesheet -->
@@ -102,8 +102,7 @@
               </nav>
     </header>
     <section id="home" class="home">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-              
+        <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="images/slider_img.jpg" class="d-block w-100" alt="Construction">
@@ -142,14 +141,14 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="fa fa-angle-left text-white" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="fa fa-angle-right text-white" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a> 
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
           </div>
     </section>
     <!-- About -->
@@ -254,11 +253,11 @@
                         <img class="logo" src="images/logo.png" alt="Construction" />
                         <p>We have well experienced in Cooling Tower Services work in Saudi Arabia in the name of MCC (Madi Contracting Est. ) more than 15 years. Now we established the J S ENGINEERING in Chennai.</p>
                         <ul class="list-inline footer_social_icon">
-                            <li class="list-inline-item"><a href=""><span class="fa fa-facebook"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-twitter"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-youtube"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-google-plus"></span></a></li>
-                            <li class="list-inline-item"><a href=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href=""><span class="fa fa-youtube"></span></a></li>
+                            <li><a href=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href=""><span class="fa fa-linkedin"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -305,6 +304,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
     <!-- Bootsnav js -->
+    <script src="js/bootsnav.js"></script>
     <!-- JS Implementing Plugins -->
     <script src="js/isotope.js"></script>
     <script src="js/isotope-active.js"></script>

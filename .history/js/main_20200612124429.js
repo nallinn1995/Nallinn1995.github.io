@@ -59,35 +59,32 @@ jQuery(document).ready(function ($) {
 
 
 
-        window.onscroll = function() {myFunction()};
+        // window.onscroll = function() {myFunction()};
         
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
+        // var navbar = document.getElementById("navbar");
+        // var sticky = navbar.offsetTop;
         
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
+        // function myFunction() {
+        //   if (window.pageYOffset >= sticky) {
+        //     navbar.classList.add("sticky")
+        //   } else {
+        //     navbar.classList.remove("sticky");
+        //   }
+        // }
        
 
-        // if ($(window).width() > 992) {
-        //     $(window).scroll(function(){  
-        //        if ($(this).scrollTop() > 40) {
-        //           $('#navbar').addClass("fixed-top");
-        //           // add padding top to show content behind navbar
-        //           $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-        //         }else{
-        //           $('#navbar').removeClass("fixed-top");
-        //            // remove padding top from body
-        //           $('body').css('padding-top', '0');
-        //         }   
-        //     });
-        //   } // end if
-
-
-       
+        if ($(window).width() > 992) {
+            $(window).scroll(function(){  
+               if ($(this).scrollTop() > 40) {
+                  $('#navbar').addClass("fixed-top");
+                  // add padding top to show content behind navbar
+                //   $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+                }else{
+                  $('#navbar').removeClass("fixed-top");
+                   // remove padding top from body
+                  $('body').css('padding-top', '5px');
+                }   
+            });
+          } // end if
 
 });

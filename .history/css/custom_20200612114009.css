@@ -165,7 +165,6 @@ a:hover,a:focus{ text-decoration: none}
 nav.navbar.bootsnav {
     background: #197280b0 none repeat scroll 0 0;
     border: 0 none;
-    transition: all 0.25s ease-in;
 }
 
 nav.navbar.bg-custom {
@@ -204,27 +203,19 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
   }
 
-  .fixed-top {
-	position: fixed;
-	top: 0;
-	
-}
-
-
 /* Carousel */
-/* .home .carousel {
+.home .carousel {
     position: relative;
     height: 100%;
     display: inline-block;
     width: 100%;
-} */
-/* .home .carousel .item img{
+}
+.home .carousel .item img{
     width:100%;
     height: 700px;
-} */
+}
 /*.carousel-inner > .item > a > img,
 .carousel-inner > .item > img {
     height: 700px;
@@ -299,7 +290,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 .navbar .nav-item.active .nav-link::after{
     border-bottom: 5px solid #5bc0eb;
-    bottom: 0px;
+    bottom: 10px;
     content: " ";
     left: 0;
     position: absolute;
@@ -311,7 +302,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 
 
 
-/* 
+
 .carousel-control{
     width:50px;
     height: 50px;
@@ -319,16 +310,6 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     text-align: center;
     margin-top:-25px;
     top:50%;
-} */
-
-.carousel-control-next {
-    right: -50px !important;
-}
-
-.carousel-control-prev {
-    left: -50px !important;
-    
-
 }
 
 /* About */
@@ -360,7 +341,7 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
 img.img-scale{
     object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 250px;
 }
 
 
@@ -374,7 +355,6 @@ img.img-scale{
     background: #f2f7fa none repeat scroll 0 0;
     padding-bottom: 50px;
     line-height: 18px;
-    margin-top: -70px;
 }
 #why_us h2 {
     margin: 70px 0 20px;

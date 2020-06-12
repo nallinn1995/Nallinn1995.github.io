@@ -321,16 +321,6 @@ nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:fo
     top:50%;
 } */
 
-.carousel-control-next {
-    right: -50px !important;
-}
-
-.carousel-control-prev {
-    left: -50px !important;
-    
-
-}
-
 /* About */
 .about_content {
     margin-right: 25px;
